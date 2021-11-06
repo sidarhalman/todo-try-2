@@ -1,29 +1,40 @@
 * {
-  font-family: monospace; }
+  font-family: monospace;
+}
 
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
-  body h1 {
-    text-align: center; }
-  body .form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    body .form-container #todo-form {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end; }
-      body .form-container #todo-form #todo-input {
-        width: 85vw;
-        margin: 5px; }
-      body .form-container #todo-form #todo-button {
-        width: 30vw;
-        margin: 5px; }
-  body #todo-list-container {
-    border: 1px solid black;
-    width: 85vw; }
+  align-items: center;
+}
+body h1 {
+  text-align: center;
+}
+body .form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .form-container #todo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+body .form-container #todo-form #todo-input {
+  width: 85vw;
+  margin: 5px;
+}
+body .form-container #todo-form #todo-button {
+  width: 30vw;
+  margin: 5px;
+}
+body #todo-list-container {
+  border: 1px solid black;
+  width: 85vw;
+}
+body #result {
+  width: 85vw;
+}
 
 /*# sourceMappingURL=style.css.map */

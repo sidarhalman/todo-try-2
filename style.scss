@@ -20,15 +20,20 @@ body{
             #todo-input{
                 width: 85vw;
                 margin: 5px;
+               
             }
             #todo-button{
                 width: 30vw;
                 margin: 5px;
+                
             }
         }
     }
     #todo-list-container{
         border: 1px solid black;
+        width: 85vw;
+    }
+    #result{
         width: 85vw;
     }
 
