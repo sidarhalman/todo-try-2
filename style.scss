@@ -1,0 +1,36 @@
+*{
+    font-family: monospace;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        text-align: center;
+    }
+    .form-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #todo-form{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            #todo-input{
+                width: 85vw;
+                margin: 5px;
+            }
+            #todo-button{
+                width: 30vw;
+                margin: 5px;
+            }
+        }
+    }
+    #todo-list-container{
+        border: 1px solid black;
+        width: 85vw;
+    }
+
+
+}
