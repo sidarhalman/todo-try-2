@@ -5,7 +5,6 @@ const todoListContainer = document.getElementById("todo-list-container");
 const emptyAlert = document.getElementById("empty-alert");
 const todoList = document.getElementById("todo-list");
 const resultAlert  = document.getElementById("result-alert");
-console.log(resultAlert)
 //---------------------------------- 
 
 todoButton.addEventListener("click", addTodo);
@@ -45,10 +44,17 @@ function addTodo(event)
         resultAlert.textContent = "You wrote anything ://.."
         resultAlert.style.backgroundColor = "#F8D7DA";
         resultAlert.style.color = "#AF3129"
-    }
+    };
 }
 
-todoList.addEventListener("click", deleteTodoFromUI);
+todoButton.addEventListener("click", addTodoToStorage);
+
+function addTodoToStorage()
+{
+    
+    console.log(todoInput.value);
+}
+
 
 function deleteTodoFromUI(event)
 {
