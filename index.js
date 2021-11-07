@@ -38,6 +38,7 @@ function addTodo(event)
         resultAlert.textContent = "Great!! You added a todo!"
         resultAlert.style.background = "#D1E7DD";
         resultAlert.style.color = "#455132"
+        
         let todos =[];
         if(localStorage.getItem("todos") === null)
         {
@@ -47,7 +48,7 @@ function addTodo(event)
         {
             todos = JSON.parse(localStorage.getItem("todos"))
         }
-        todos.push(todo.textContent);
+        todos.push(todoText.textContent);
 
         localStorage.setItem("todos",JSON.stringify(todos));
 
