@@ -38,6 +38,19 @@ function addTodo(event)
         resultAlert.textContent = "Great!! You added a todo!"
         resultAlert.style.background = "#D1E7DD";
         resultAlert.style.color = "#455132"
+        let todos =[];
+        if(localStorage.getItem("todos") === null)
+        {
+            todos =[];
+        }
+        else
+        {
+            todos = JSON.parse(localStorage.getItem("todos"))
+        }
+        todos.push(todo.textContent);
+
+        localStorage.setItem("todos",JSON.stringify(todos));
+
     }
     else
     {
@@ -45,17 +58,12 @@ function addTodo(event)
         resultAlert.style.backgroundColor = "#F8D7DA";
         resultAlert.style.color = "#AF3129"
     };
-}
 
-todoButton.addEventListener("click", addTodoToStorage);
-
-function addTodoToStorage()
-{
-    
-    console.log(todoInput.value);
 }
 
 
+
+todoList.addEventListener("click",deleteTodoFromUI)
 function deleteTodoFromUI(event)
 {
     const trgt = event.target;

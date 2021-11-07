@@ -22,7 +22,7 @@ body .form-container #todo-form {
   align-items: flex-end;
 }
 body .form-container #todo-form #todo-input {
-  width: 85vw;
+  width: 84vw;
   margin: 5px;
 }
 body .form-container #todo-form #todo-button {
